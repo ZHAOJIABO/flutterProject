@@ -35,7 +35,6 @@ class MemoProvider with ChangeNotifier {
           return memo.reminderTime.year == now.year &&
               memo.reminderTime.month == now.month;
         case TimeFilter.all:
-        default:
           return true;
       }
     }).toList();
